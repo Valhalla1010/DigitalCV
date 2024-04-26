@@ -1,0 +1,225 @@
+body{
+    margin: 0;
+    font-family: Lato, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #050505;
+    text-align: left;
+    background-color: #fff;
+}
+@media (min-width: 576px) {
+    * {
+        line-height: 1.6875rem;
+    }
+}
+
+@media (min-width: 1200px)
+.container {
+    max-width: 1140px;
+}
+.container, .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px)
+.title-container {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 500px;
+    margin-left: 590px;
+}
+@media (min-width: 576px)
+* {
+    line-height: 1.6875rem;
+}
+
+@media (min-width: 576px)
+.heading-level-1, h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    word-break: normal;
+}
+h1, h2, h3, h4, h5 {
+    font-style: inherit;
+    font-weight: inherit;
+    color: #404040;
+}
+h1, h2 {
+       font-family: Lato;
+   }
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+h3{
+        display: block;
+        font-size: 2em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        unicode-bidi: isolate;
+}
+
+.preamble, .preamble p, p.preamble, p.preamble p {
+    font-family: Lato Bold;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+@media (min-width: 768px)
+.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.contact-content-area, .content-area, .faqblock, .illustrating-image-container, .preamble-container, .primary-content-area, .primary-content-area-top, .secondary-content-area {
+    margin-bottom: 49px;
+}
+
+.link-block .link-block-item {
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: box-shadow .3s ease;
+}
+.lazyloaded {
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+
+.con{
+    display: flex;
+    justify-content: center; /* Centrera horisontellt */
+    align-items: center; /* Centrera vertikalt */
+
+}
+.con-image{
+    text-align: center;
+    border: 2px solid #000; /* Border-stil */
+    padding: 20px;
+    background-color: dodgerblue;
+}
+
+.con-image img {
+
+    width: 600px; /* För att se till att bilden inte överskrider container */
+    height: 350px;
+
+}
+.con-image h3 {
+    margin-top: 10px;
+    text-align: left;
+}
+
+
+.footer {
+    border: 2px solid dodgerblue;
+    bottom: 0; /* Placera det längst ner */
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    background-color: gold;
+}
+hr{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: dodgerblue;
+    box-shadow: 0px 8px 16px 0px rgb(157, 24, 0);
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 60px;
+    margin: 3px;
+}
+
+.logo2 img{
+    width: 30px;
+    margin: 2px;
+}
+
+.text{
+    color: gold;
+    font-family: sans-serif;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navigation ul li a {
+    color: gold;
+    font-family: sans-serif;
+    font-size: large;
+
+}
+.text1{
+    text-align: left;
+}

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <meta http-equiv="Content-Type"
+      content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <link href="CSS/prof.css"
+      rel="stylesheet" type="text/css"/>
+    <title>Profil</title>
+<f:view>
+    <h:body>
+    <div class="header">
+        <div class="logo"><img src="Images/cv.jpg" alt="logo"/>
+            <h1 class="text">DigitalCV</h1>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Meny</button>
+            <div  class="dropdown-content">
+                <a href="index.xhtml">Home</a>
+                <a class="menu-item" href="create_acc.xhtml">Spara_CV</a>
+                <a class="menu-item" href="Loga_IN.xhtml">Logga_ut</a>
+            </div>
+        </div>
+    </div>
+        <div class="profile">
+            <h:form enctype="multipart/form-data" >
+                <h:outputLabel for="photo">Lassa upp bild</h:outputLabel>
+                <strong/><strong/>
+                <h:inputFile type="file" id="photo" accept="image/*" value="#{createBean.image}" />
+                <br/>
+                <br/>
+
+                <h:outputLabel for="firs" value="Förnamn"/>
+                <strong/><strong/>
+                <h:inputText id="firs"  value="#{createBean.firstname}"/>
+                <strong/><strong/>
+                <h:outputLabel for="efternamn" value="Efternamn"/>
+                <strong/><strong/>
+                <h:inputText id="efternamn" value="#{createBean.lastname}"/>
+                <br/>
+                <br/>
+
+                <h:outputLabel for="adree" value="Adress"/>
+                <strong/><strong/>
+                <h:inputText id="adree"  value="#{createBean.adress}"/>
+                <strong/><strong/>
+                <h:outputLabel for="mobil" value="Mobil"/>
+                <strong/><strong/>
+                <h:inputText id="mobil"  value="#{createBean.mobile}"/>
+                <br/>
+                <br/>
+
+                <h:outputLabel for="emai" value="Email"/>
+                <br/>
+                <h:inputText id="emai"  value="#{createBean.email}"/>
+                <br/>
+                <br/>
+
+                <h:outputLabel for="lin" value="GitHub-länk"/>
+                <br/>
+                <h:inputText id="lin"  value="#{createBean.github}"/>
+                <br/>
+                <br/>
+
+                <h:outputLabel for="profi" value="Profil"/>
+                <br/>
+                <h:inputText id="profi"  styleClass="custom-input"  value="#{createBean.profile}"/>
+                <br/>
+                <br/>
+
+                <h:outputLabel for="bre"  value="Personbrev"/>
+                <br/>
+                <h:inputText id="bre"  styleClass="custom-input" value="#{createBean.personbrev}"/>
+                <br/>
+                <br/>
+
+                <h:outputLabel for="utbi" value="Utbildning"/>
+                <br/>
+                <h:inputText id="utbi"  styleClass="custom-input" value="#{createBean.utbildning}"/>
+                <strong/><strong/>
+                <h:outputLabel value="Hämta betyg"/>
+                <a href="Loga_IN.xhtml"><h:commandButton value="Hämta"  /></a>
+                <br/>
+                <br/>
+
+                <h:outputLabel for="er" value="Arbetslivserfaranhet"/>
+                <br/>
+                <h:inputText id="er"  styleClass="custom-input" value="#{createBean.arbets}"/>
+                <br/>
+                <br/>
+
+                <h:outputLabel for="pro" value="Programfärdighet"/>
+                <br/>
+                <h:inputText id="pro"  styleClass="custom-input" value="#{createBean.program}"/>
+                <br/>
+                <br/>
+
+                <div class="bot">
+                    <h:commandButton value="Skapa CV" type="submit" action="#{createBean.PDF()}"/>
+                </div>
+
+
+
+            </h:form>
+        </div>
+    </h:body>
+</f:view>
+</html>
