@@ -7,10 +7,10 @@ import java.util.Random;
 
 
 public class TOTP {
-
+    public static final String SECRET_KEY = "my_secret_key";
     public static String generateTOTP(String key) {
         try {
-            long time = System.currentTimeMillis() / 60000; //
+            long time = System.currentTimeMillis() / 30000; //
             byte[] keyBytes = key.getBytes();
             byte[] msg = new byte[8];
             for (int i = 7; i >= 0; i--) {

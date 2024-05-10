@@ -27,27 +27,25 @@
         </div>
     </div>
 </div>
-<form action="CV" method="post">
+<form action="CV" method="get">
     <div class="profile">
     Foto       <br/> <input type="file">
     Förnamn    <br/> <input type="text" name="f"/><br/><br/>
     Efternamn  <br/> <input type="text" name="l"/><br/><br/>
     Adress     <br/> <input type="text" name="a"><br/><br/>
     Mobile     <br/>  <input type="text" name="m"><br/><br/>
-    Email      <br/> <input type="text" name="e"><br/><br/>
+    Email      <br/> <input type="email" name="to"><br/><br/>
     GitHub-Länk <br/><input type="text" name="g"><br/><br/>
     Profil      <br/><input type="text" name="p"><br/><br/>
     Personbrev  <br/><input type="text" name="per"><br/><br/>
     Utbildning  <br/><input type="text" name="u"><br/><br/>
     Arbetslivserfarenhet   <br/><input type="text" name="arb"><br/><br/>
     Programfärdighet       <br/><input type="text" name="prog"><br/><br/>
-
-       <p>otp : <%= request.getAttribute("otp")%></p>
+       <p>
         <br>
         <input type="submit" value="Skapa PDF"/>
+        <br>
     </div>
-
-
 </form>
 </body>
 </html>

@@ -13,7 +13,6 @@ import java.lang.reflect.UndeclaredThrowableException;
 import java.security.GeneralSecurityException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
-import java.util.Scanner;
 
 /**
  * This class contains static methods that are used to calculate the
@@ -121,9 +120,18 @@ public class HOTP {
         int truncationOffset = 0;
         try {
             System.out.println(generateOTP(secret, movingFactor, codeDigits, addChecksum, truncationOffset));
+
+            for ( movingFactor = 1234567890L; movingFactor <= 1234567900L; movingFactor++) {
+
+                    String otp = generateOTP(secret, movingFactor, codeDigits, addChecksum, truncationOffset);
+                    System.out.println("OTP for movingFactor " + movingFactor + ": " + otp);
+            }
+
         }catch (Exception e){
             e.printStackTrace();
         }
+
+
         /*try {
             String OTP = HOTP.generateOTP(secret, movingFactor, codeDigits, addChecksum, truncationOffset);
             System.out.println("Password: " + OTP);
